@@ -1,7 +1,9 @@
+/* Define los tipo para Query y para Id */
 export type Query = Record<string, any>
 
 export type Id = string | number
 
+/* Definir una interfaz. */
 export interface DatabaseRepository<T>{
     create(data: Partial<T>, query?: Query): Promise<T>
     list(query?: Query): Promise<T[]>
