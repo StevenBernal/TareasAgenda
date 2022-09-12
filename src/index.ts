@@ -22,7 +22,7 @@ app.use("/documentation",swaggerUi.serve, swaggerUi.setup(swaggerSetup))
 
 /** Una promesa que se está llamando. */
 database.initialize()
-    .then(() => console.log("Database connected"))
+    .then(() => console.log("Se conecto correctamente con la base de datos"))
     .catch(console.error)
 
 /** Un middleware que se va a ejecutar cada vez que el usuario haga una petición al servidor. */
@@ -30,5 +30,5 @@ app.use(TaskRoutes)
 
 /** Escuchando el puerto 3030. */
 app.listen(3030, () => {
-    console.log("App execute in port: 3030")
+    console.log("La app se esta ejecutando en el puerto: 3030")
 });

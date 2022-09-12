@@ -94,7 +94,7 @@ export class TaskController {
      *            required: true
      *            description: "Id de la tarea requerida:"
      *            schema:
-     *              type: number
+     *              type: string
      *      responses:
      *        '200':
      *          description: Retorna el objeto insertado en la coleccion.
@@ -135,7 +135,7 @@ export class TaskController {
      *            required: true
      *            description: "Id de la tarea requerida:"
      *            schema:
-     *              type: number
+     *              type: string
      *      requestBody:
      *          content:
      *            application/json:
@@ -185,7 +185,7 @@ export class TaskController {
      *            required: true
      *            description: "Id de la tarea requerida:"
      *            schema:
-     *              type: number
+     *              type: string
      *      responses:
      *        '200':
      *          description: Retorna el objeto insertado en la coleccion.

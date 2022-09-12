@@ -22,8 +22,8 @@ El decorador @Column() se utiliza para decorar las propiedades title y descripti
 
 @Entity()
 export default class Task {
-    @PrimaryGeneratedColumn() 
-    id!: number
+    @PrimaryGeneratedColumn("uuid") 
+    id!: number;
 
     @Column()
     title!: string
